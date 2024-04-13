@@ -58,6 +58,9 @@
             <div class="bio">
             <img class="avatar" src="{{profile_image}}" />
             <h3>{{name}}</h3>
+            {{#if website}}
+              <li><a href="{{website}}">{{website}}</a></li>
+            {{/if}}
             {{#if twitter}}
               <li><a href="{{twitter_url}}">Twitter</a></li>
             {{/if}}
