@@ -52,16 +52,20 @@
       </nav>
 
       {{#post}}
-      {{#if primary_author}}
-        <div class="bio">
-          <img class="avatar" src="{{primary_author.profile_image}}" />
-          <h3>{{primary_author.name}}</h3>
-          {{#if twitter}}
-          <li><a href="{{twitter_url}}">Twitter</a></li>
-          {{/if}}
-          <p>{{primary_author.bio}}</p>
-        </div>
-      {{/if}}
+        {{#if authors}}
+          <ul>
+          {{#foreach authors}}
+            <div class="bio">
+            <img class="avatar" src="{{profile_image}}" />
+            <h3>{{name}}</h3>
+            {{#if twitter}}
+              <li><a href="{{twitter_url}}">Twitter</a></li>
+            {{/if}}
+            <p>{{bio}}</p>
+            </div>
+            {{/foreach}}
+          </ul>
+        {{/if}}
       {{/post}}
 
     </div>
