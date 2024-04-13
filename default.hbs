@@ -47,7 +47,9 @@
       <nav>
         <ul>
           <li><a href="{{@site.url}}">Home</a></li>
-          <li><a href="http://twitter.com/redwall_hp">Twitter</a></li>
+          {{#if twitter}}
+          <li><a href="{{twitter_url}}">Twitter</a></li>
+          {{/if}}
           <li><a href="{{@site.url}}/rss/">RSS Feed</a></li>
         </ul>
       </nav>
