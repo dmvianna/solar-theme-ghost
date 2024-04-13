@@ -349,7 +349,10 @@ code[class*="language-"], pre[class*="language-"] {
 	font-size: 65%;
 }
 
-
+.kg-width-full img,
+.kg-width-wide img{
+    // required by gcsan to properly validate the theme
+}
 
 /*
  * Prism.js Syntax Highlighting
