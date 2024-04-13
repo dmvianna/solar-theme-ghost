@@ -47,9 +47,6 @@
       <nav>
         <ul>
           <li><a href="{{@site.url}}">Home</a></li>
-          {{#if twitter}}
-          <li><a href="{{twitter_url}}">Twitter</a></li>
-          {{/if}}
           <li><a href="{{@site.url}}/rss/">RSS Feed</a></li>
         </ul>
       </nav>
@@ -59,6 +56,9 @@
         <div class="bio">
           <img class="avatar" src="{{primary_author.profile_image}}" />
           <h3>{{primary_author.name}}</h3>
+          {{#if twitter}}
+          <li><a href="{{twitter_url}}">Twitter</a></li>
+          {{/if}}
           <p>{{primary_author.bio}}</p>
         </div>
       {{/if}}
